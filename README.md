@@ -1,4 +1,26 @@
 # Unit-Testing-Article-Group4
+## Introduction
+In software development, testing is an extensive topic of discussion. Before a software product reaches the hands of users, it will likely to have gone through several tests to ensure that the applications behaviour is as expected from the end user's perspective without any defects or bugs. 
+
+There are two primary approaches used while testing software: Functional Testing and Non-functional Testing. Functional testing focuses on the functionality of a software product. It helps to understand whether the software is performing as needed. Each functionality is tested by providing the input, calculating the output, and comparing the actual result to the anticipated value. While non-functional testing is a sort of software testing used to evaluate the software's non-functional characteristics such as reliability, performance, and accountability. Testing, both functional and non-functional, is necessary for newly produced software. While non-functional testing examines an application's capacity to operate in an external environment, functional testing examines the accuracy of internal functions. 
+
+## What is Unit testing? 
+
+Unit testing is a form of software testing that focuses on validating individual units or components of a software application and confirming that each unit functions as intended. It is considered the first phase of functional testing in the software development life cycle. It ensures that it has no impact on any other parts of your code than the component or unit under test by isolating them from the rest of your code. As a result, it isolates a single functional component, guarantees correctness, and confirms that there are no errors, enabling speedy bug fixes before merging them into the main code. It is a type of "white box" testing. It is frequently accomplished by writing test cases that test specific functions, methods, and classes. Test cases can be written in plain English, even though they are usually written in pseudocode (implemented in a language like Java or JavaScript).
+
+In this article, we are concentrating on unit testing, a type of functional testing. 
+
+The procedure for conducting unit tests consists of four steps:
+
+- Creating test cases: Write several test cases for each component of a web application.
+- Review and rewrite: Examine the written test cases and, if necessary, rewrite them if there are any mistakes.
+- Baseline: Verify that each line of code is structured in a certain way.
+or not.
+- Execution: Choose an online Selenium grid to conduct test execution.
+
+Unit tests are executed frequently and quickly, either individually or collectively. Even if they have complex logic or a lot of variables, they should be written in a straightforward, easy-to-read, and understandable manner. Unit testing is conducted before integration testing, so it can save a significant amount of time and money if done accurately. It can be done manually or automatically using different testing tools.
+
+
 ## How unit testing is done?
  - Software testing methods like unit testing are essential for assuring the dependability and quality of a program. Early bug detection and correction can save time and money in the long run because it is a cost-effective method.
 - The ability to independently test particular pieces of code rather than having to test the complete application is one of the main advantages of unit testing. 
