@@ -16,14 +16,73 @@ The procedure for conducting unit tests consists of four steps:
 or not.
 - Execution: Choose an online Selenium grid to conduct test execution.
 
+<<<<<<< HEAD
 Unit tests are executed frequently and quickly, either individually or collectively. Even if they have complex logic or a lot of variables, they should be written in a straightforward, easy-to-read, and understandable manner. Unit testing is conducted before integration testing, so it can save a significant amount of time and money if done accurately. It can be done manually or automatically using different testing tools. ( [Unit testing- lambdatest]( https://www.lambdatest.com/learning-hub/unit-testing) )
+=======
+- Unit tests are executed frequently and quickly, either individually or collectively. Even if they have complex logic or a lot of variables, they should be written in a straightforward, easy-to-read, and understandable manner. Unit testing is conducted before integration testing, so it can save a significant amount of time and money if done accurately. It can be done manually or automatically using different testing tools.
+>>>>>>> d66f7ff6fd32030eae2a3cf85b9f51c11c14fb53
 
 Unit testing can be further classified into three different types of testing:
 
 1. Whitebox testing- It is also known as glass box testing, structural testing, clear box testing, open box testing and transparent box testing. When performing this testing, the tester is familiar of the applications internal functionality and can test it against the design and requirements. It examines a software's internal code and infrastructure with a focus on comparing inputs that have been predefined to the desired and expected results. However, it is unknown what the internal structure of a component or function of an application is.
 
+<<<<<<< HEAD
 2. Black-box testing: In this kind of unit testing, the user interface, input, and output of the software application are all validated. To put it another way, black box testing is the process of evaluating an application's functioning in view of client requirements. This testing is known as black-box testing since the source code is hidden throughout it.
 3. Gray-box testing: It is sometimes referred to as semi-transparent testing, is a combination of white-box and black-box testing. In this kind of testing, the testers are only partially familiar with the internal workings, functionality, and design specifications of the application. Gray-box testing encompasses a variety of test types, including regression, matrix, pattern, and orthogonal pattern testing.
+=======
+- Although writing, running, and debugging unit tests is quick and simple, that doesn't imply you should completely avoid them. According to the majority of DevOps concepts, it's necessary to develop techniques to expedite the creation of unit tests because they can be laborious to set up, especially if they're not automated.
+
+
+Unit testing can be done in one of two ways:
+
+
+- Manual unit testing entails carrying out each test phase by hand. Without the use of an automation tool, manual testing is time-consuming and laborious, especially for repetitive test cases, and it takes more work to create and execute test cases.
+Automated unit testing is the process of employing automated testing technologies to automate routine manual processes. You can record, preserve, and replay your tests using automated testing technologies to avoid manual effort.
+- 
+
+
+
+## Example code for temperature check test cases
+```java
+ # is (input, expected result, comment)
+is( FtoC(32),0,'Freezing point is F32, C 0');
+is( FtoC(212),100,'Boiling point is F212, C 100');
+is( FtoC(59038),32767, 'Upper limit of C is 32767'); 
+is( FtoC(59039),undefined, 'One past upper limit is error');
+``` 
+[Why is unit testing is imortent to developers](https://www.techtarget.com/searchsoftwarequality/answer/Is-unit-testing-an-important-aspect-of-software-development)
+
+## Another Example
+```java
+
+
+public class FakeDateTimeProvider : IDateTimeProvider
+{
+    public DateTime ReturnValue { get; set; }
+
+    public DateTime GetDateTime() { return ReturnValue; }
+
+    public FakeDateTimeProvider(DateTime returnValue) { ReturnValue = returnValue; }
+}
+
+```
+### Testing code
+```java
+[TestMethod]
+void ActuateLights_MotionDetected_SavesTimeOfMotion()
+{
+    // Arrange
+    var controller = new SmartHomeController(new FakeDateTimeProvider(new DateTime(2015, 12, 31, 23, 59, 59)));
+
+    // Act
+    controller.ActuateLights(true);
+
+    // Assert
+    Assert.AreEqual(new DateTime(2015, 12, 31, 23, 59, 59), controller.LastMotionTime);
+}
+```
+[Unit testing and coding : best practices](https://www.toptal.com/qa/how-to-write-testable-code-and-why-it-matters#:~:text=A%20typical%20unit%20test%20contains,it%20observes%20the%20resulting%20behavior)
+>>>>>>> d66f7ff6fd32030eae2a3cf85b9f51c11c14fb53
 
 
 ## Why unit testing is important?
