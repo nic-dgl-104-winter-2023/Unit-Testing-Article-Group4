@@ -28,6 +28,49 @@ Unit tests are executed frequently and quickly, either individually or collectiv
 - Additionally, unit testing encourages a more flexible and reusable code architecture. Developers are compelled to consider the different parts of their code in isolation and how they interact with one another when they design unit tests. As a result, the codebase is better planned and easier to maintain.
 
 
+
+## Example code for temperature check test cases
+```java
+ # is (input, expected result, comment)
+is( FtoC(32),0,'Freezing point is F32, C 0');
+is( FtoC(212),100,'Boiling point is F212, C 100');
+is( FtoC(59038),32767, 'Upper limit of C is 32767'); 
+is( FtoC(59039),undefined, 'One past upper limit is error');
+``` 
+[Why is unit testing is imortent to developers](https://www.techtarget.com/searchsoftwarequality/answer/Is-unit-testing-an-important-aspect-of-software-development)
+
+## Another Example
+```java
+
+
+public class FakeDateTimeProvider : IDateTimeProvider
+{
+    public DateTime ReturnValue { get; set; }
+
+    public DateTime GetDateTime() { return ReturnValue; }
+
+    public FakeDateTimeProvider(DateTime returnValue) { ReturnValue = returnValue; }
+}
+
+```
+### Testing code
+```java
+[TestMethod]
+void ActuateLights_MotionDetected_SavesTimeOfMotion()
+{
+    // Arrange
+    var controller = new SmartHomeController(new FakeDateTimeProvider(new DateTime(2015, 12, 31, 23, 59, 59)));
+
+    // Act
+    controller.ActuateLights(true);
+
+    // Assert
+    Assert.AreEqual(new DateTime(2015, 12, 31, 23, 59, 59), controller.LastMotionTime);
+}
+```
+[Unit testing and coding : best practices](https://www.toptal.com/qa/how-to-write-testable-code-and-why-it-matters#:~:text=A%20typical%20unit%20test%20contains,it%20observes%20the%20resulting%20behavior)
+
+
 ## Why unit testing is important?
 Unit testing is important because it helps ensure that individual components of a software system are working as intended. By running tests on individual units, developers can quickly identify and fix issues, improving the overall quality and reliability of the system. Unit testing also promotes good coding practices by encouraging developers to write modular, testable code. This can make it easier to maintain and extend the codebase over time. Additionally, unit testing can improve collaboration between team members by providing a clear, automated way to validate changes to the code. Overall, unit testing is an essential tool for building robust and high-quality software systems.
 
