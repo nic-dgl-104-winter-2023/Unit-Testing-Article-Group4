@@ -68,7 +68,7 @@ is( FtoC(212),100,'Boiling point is F212, C 100');
 is( FtoC(59038),32767, 'Upper limit of C is 32767'); 
 is( FtoC(59039),undefined, 'One past upper limit is error');
 ``` 
-[Why is unit testing is imortent to developers](https://www.techtarget.com/searchsoftwarequality/answer/Is-unit-testing-an-important-aspect-of-software-development)
+[Why is unit testing is important to developers](https://www.techtarget.com/searchsoftwarequality/answer/Is-unit-testing-an-important-aspect-of-software-development)
 
 ## Example-2
 ```java
@@ -117,13 +117,13 @@ public class RectangleTest {
     [TestMethod]
     public void TestCalculateArea() {
         Rectangle rectangle = new Rectangle();
-        double area = rectangle.CalculateArea(5, 10);
+        double area = rectangle.CalculateArea(20, 30);
         Assert.AreEqual(50, area);
 
-        area = rectangle.CalculateArea(0, 10);
+        area = rectangle.CalculateArea(0, 50);
         Assert.AreEqual(-1, area);
 
-        area = rectangle.CalculateArea(5, -10);
+        area = rectangle.CalculateArea(10, -50);
         Assert.AreEqual(-1, area);
     }
 }
@@ -132,3 +132,13 @@ public class RectangleTest {
 
 ## Conclusion
 In summary, unit testing is an essential step in the development of software that focuses on ensuring the functionality of individual application components. It encourages excellent coding methods, helps in the early detection of defects, and raises the system's overall quality and dependability. Developers can quickly find problems and solve them while reducing time and expense by separating and testing individual parts. Ultimately, unit testing is a crucial technique for creating reliable, high-quality software systems, and every software development process should include it.
+
+## References
+- [Unit testing- datacamp](https://www.datacamp.com/tutorial/pytest-tutorial-a-hands-on-guide-tit-testino-ung)
+- [Unit testing- Javatpoint](https://www.javatpoint.com/types-of-software-testing)
+- [Unit testing best practices-brightsec](https://brightsec.com/blog/unit-testing-best-practices/)
+- [Unit testing best practices-microsoft](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices)
+- [Unit testing best practices-simform](https://www.simform.com/blog/unit-testing-best-practices/)
+- [How to perform Unit Testing](https://www.lambdatest.com/learning-hub/unit-testing#i).
+- [Example code for calculating rectangle area](https://dotnettutorials.net/lesson/area-of-rectangle-in-csharp/)
+- [Unit testing and coding : best practices](https://www.toptal.com/qa/how-to-write-testable-code-and-why-it-matters#:~:text=A%20typical%20unit%20test%20contains,it%20observes%20the%20resulting%20behavior)
