@@ -35,7 +35,11 @@ Unit testing can be done in one of two ways:
 
 - Manual unit testing entails carrying out each test phase by hand. Without the use of an automation tool, manual testing is time-consuming and laborious, especially for repetitive test cases, and it takes more work to create and execute test cases.
 Automated unit testing is the process of employing automated testing technologies to automate routine manual processes. You can record, preserve, and replay your tests using automated testing technologies to avoid manual effort.
-- 
+- However, many usability problems may go unnoticed during a website's testing. For instance, certain features of your website function properly on Chrome 99 (Windows 11), but not in Firefox 97. (Windows 11). Cross-browser testing is therefore crucial to resolving such usability issues before your customers do.
+
+
+- Automated browser and user interface testing can be carried out using a variety of unit testing frameworks. You can automate your browser and app testing across 3000+ real browsers, devices, and operating system combinations with a cloud-based testing tool like LambdaTest. It also provides parallel testing, which can drastically reduce the time it takes to run all of your tests.
+- [How to perform Unit Testing](https://www.lambdatest.com/learning-hub/unit-testing#i).
 
 
 
