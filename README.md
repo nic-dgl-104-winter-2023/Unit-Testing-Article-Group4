@@ -18,7 +18,7 @@ The procedure for conducting unit tests consists of four steps:
 or not.
 - Execution: Choose an online Selenium grid to conduct test execution.
 
-Unit tests are executed frequently and quickly, either individually or collectively. Even if they have complex logic or a lot of variables, they should be written in a straightforward, easy-to-read, and understandable manner. Unit testing is conducted before integration testing, so it can save a significant amount of time and money if done accurately. It can be done manually or automatically using different testing tools.
+- Unit tests are executed frequently and quickly, either individually or collectively. Even if they have complex logic or a lot of variables, they should be written in a straightforward, easy-to-read, and understandable manner. Unit testing is conducted before integration testing, so it can save a significant amount of time and money if done accurately. It can be done manually or automatically using different testing tools.
 
 
 ## How unit testing is done?
@@ -26,6 +26,16 @@ Unit tests are executed frequently and quickly, either individually or collectiv
 - The ability to independently test particular pieces of code rather than having to test the complete application is one of the main advantages of unit testing. 
 - This improves in spotting issues early on in the development process, before they escalate in complexity and cost to resolve. Unit tests also offer a safety net for upcoming code revisions, making it simpler to make sure that changes to one section of the code do not unintentionally break another.
 - Additionally, unit testing encourages a more flexible and reusable code architecture. Developers are compelled to consider the different parts of their code in isolation and how they interact with one another when they design unit tests. As a result, the codebase is better planned and easier to maintain.
+
+- Although writing, running, and debugging unit tests is quick and simple, that doesn't imply you should completely avoid them. According to the majority of DevOps concepts, it's necessary to develop techniques to expedite the creation of unit tests because they can be laborious to set up, especially if they're not automated.
+
+
+Unit testing can be done in one of two ways:
+
+
+- Manual unit testing entails carrying out each test phase by hand. Without the use of an automation tool, manual testing is time-consuming and laborious, especially for repetitive test cases, and it takes more work to create and execute test cases.
+Automated unit testing is the process of employing automated testing technologies to automate routine manual processes. You can record, preserve, and replay your tests using automated testing technologies to avoid manual effort.
+- 
 
 
 
