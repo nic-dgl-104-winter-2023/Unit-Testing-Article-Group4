@@ -5,8 +5,8 @@
  There are two primary approaches used while testing software: Functional Testing and Non-functional Testing. Functional testing focuses on the functionality of a software product. It helps to understand whether the software is performing as needed. Each functionality is tested by providing the input, calculating the output, and comparing the actual result to the anticipated value. While non-functional testing is a sort of software testing used to evaluate the software's non-functional characteristics such as reliability, performance, and accountability. Testing, both functional and non-functional, is necessary for newly produced software. While non-functional testing examines an application's capacity to operate in an external environment, functional testing examines the accuracy of internal functions. ( [Unit testing- Javatpoint](https://www.javatpoint.com/types-of-software-testing) )
 
  In this article, we are concentrating on unit testing, a type of functional testing.
+ 
  ## What is Unit testing? 
-
 Unit testing is a form of software testing that focuses on validating individual units or components of a software application and confirming that each unit functions as intended. It is considered the first phase of functional testing in the software development life cycle. It ensures that it has no impact on any other parts of your code than the component or unit under test by isolating them from the rest of your code. As a result, it isolates a single functional component, guarantees correctness, and confirms that there are no errors, enabling speedy bug fixes before merging them into the main code. It is a type of "white box" testing. It is frequently accomplished by writing test cases that test specific functions, methods, and classes. Test cases can be written in plain English, even though they are usually written in pseudocode (implemented in a language like Java or JavaScript).
 
 The procedure for conducting unit tests consists of four steps:
@@ -16,11 +16,13 @@ The procedure for conducting unit tests consists of four steps:
 or not.
 - Execution: Choose an online Selenium grid to conduct test execution.
 
-
 - Unit tests are executed frequently and quickly, either individually or collectively. Even if they have complex logic or a lot of variables, they should be written in a straightforward, easy-to-read, and understandable manner. Unit testing is conducted before integration testing, so it can save a significant amount of time and money if done accurately. It can be done manually or automatically using different testing tools.
 
+### Unit testing can be done in one of two ways:
+- Manual unit testing entails carrying out each test phase by hand. Without the use of an automation tool, manual testing is time-consuming and laborious, especially for repetitive test cases, and it takes more work to create and execute test cases.
+- Automated unit testing is the process of employing automated testing technologies to automate routine manual processes. You can record, preserve, and replay your tests using automated testing technologies to avoid manual effort.
 
-Unit testing can be further classified into three different types of testing:
+### Unit testing can be further classified into three different types of testing:
 
 1. Whitebox testing- It is also known as glass box testing, structural testing, clear box testing, open box testing and transparent box testing. When performing this testing, the tester is familiar of the applications internal functionality and can test it against the design and requirements. It examines a software's internal code and infrastructure with a focus on comparing inputs that have been predefined to the desired and expected results. However, it is unknown what the internal structure of a component or function of an application is.
 
@@ -28,14 +30,6 @@ Unit testing can be further classified into three different types of testing:
 3. Gray-box testing: It is sometimes referred to as semi-transparent testing, is a combination of white-box and black-box testing. In this kind of testing, the testers are only partially familiar with the internal workings, functionality, and design specifications of the application. Gray-box testing encompasses a variety of test types, including regression, matrix, pattern, and orthogonal pattern testing.
 
 - Although writing, running, and debugging unit tests is quick and simple, that doesn't imply you should completely avoid them. According to the majority of DevOps concepts, it's necessary to develop techniques to expedite the creation of unit tests because they can be laborious to set up, especially if they're not automated.
-
-
-Unit testing can be done in one of two ways:
-
-
-- Manual unit testing entails carrying out each test phase by hand. Without the use of an automation tool, manual testing is time-consuming and laborious, especially for repetitive test cases, and it takes more work to create and execute test cases.
-Automated unit testing is the process of employing automated testing technologies to automate routine manual processes. You can record, preserve, and replay your tests using automated testing technologies to avoid manual effort.
-
 
 ## Why unit testing is important?
 Unit testing is important because it helps ensure that individual components of a software system are working as intended. By running tests on individual units, developers can quickly identify and fix issues, improving the overall quality and reliability of the system. Unit testing also promotes good coding practices by encouraging developers to write modular, testable code. This can make it easier to maintain and extend the codebase over time. Additionally, unit testing can improve collaboration between team members by providing a clear, automated way to validate changes to the code. Overall, unit testing is an essential tool for building robust and high-quality software systems. [Unit testing best practices-brightsec](https://brightsec.com/blog/unit-testing-best-practices/)
@@ -52,7 +46,7 @@ Unit testing helps to catch bugs early in the development cycle, reducing the co
 
 # Example of unit test code
 
-## Example code for temperature check test cases- 1
+## Example code for temperature check test cases in Java - 1
 ```java
  # is (input, expected result, comment)
 is( FtoC(32),0,'Freezing point is F32, C 0');
@@ -64,8 +58,6 @@ is( FtoC(59039),undefined, 'One past upper limit is error');
 
 ## Example-2
 ```java
-
-
 public class FakeDateTimeProvider : IDateTimeProvider
 {
     public DateTime ReturnValue { get; set; }
@@ -74,7 +66,6 @@ public class FakeDateTimeProvider : IDateTimeProvider
 
     public FakeDateTimeProvider(DateTime returnValue) { ReturnValue = returnValue; }
 }
-
 ```
 ### Test case
 ```java
@@ -93,9 +84,8 @@ void ActuateLights_MotionDetected_SavesTimeOfMotion()
 ```
 [Unit testing and coding : best practices](https://www.toptal.com/qa/how-to-write-testable-code-and-why-it-matters#:~:text=A%20typical%20unit%20test%20contains,it%20observes%20the%20resulting%20behavior)
 
-## Example for calculating the area of a rectangle-3
+## Example for calculating the area of a rectangle in C# - 3
 ```c#
-
 // A class with a method to calculate the area of a rectangle
 public class Rectangle {
     public double CalculateArea(double length, double width) {
@@ -124,4 +114,5 @@ public class RectangleTest {
     }
 }
 ```
+[Example code for calculation rectangle area](https://dotnettutorials.net/lesson/area-of-rectangle-in-csharp/)
 
