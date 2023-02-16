@@ -95,3 +95,35 @@ https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practice
  By writing and executing unit tests, developers can ensure that the code they write behaves as expected and is free from bugs and other defects. This helps to improve the overall quality and reliability of the system, reducing the risk of issues arising later in the development cycle. Finally, unit testing provides a clear, automated way to validate changes to the code, improving collaboration between team members and streamlining the development process. Overall, unit testing is a critical component of modern software development and helps to ensure that software systems are reliable, efficient, and maintainable.
 
 https://www.simform.com/blog/unit-testing-best-practices/ 
+# Example of unit test code
+```c#
+Example of test code
+// A class with a method to calculate the area of a rectangle
+public class Rectangle {
+    public double CalculateArea(double length, double width) {
+        if (length <= 0 || width <= 0) {
+            return -1;
+        } else {
+            return length * width;
+        }
+    }
+}
+
+// A test class to check if the Rectangle class is working as expected
+[TestClass]
+public class RectangleTest {
+    [TestMethod]
+    public void TestCalculateArea() {
+        Rectangle rectangle = new Rectangle();
+        double area = rectangle.CalculateArea(5, 10);
+        Assert.AreEqual(50, area);
+
+        area = rectangle.CalculateArea(0, 10);
+        Assert.AreEqual(-1, area);
+
+        area = rectangle.CalculateArea(5, -10);
+        Assert.AreEqual(-1, area);
+    }
+}
+```
+
