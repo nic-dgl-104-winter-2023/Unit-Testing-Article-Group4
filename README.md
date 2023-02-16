@@ -35,66 +35,20 @@ Unit testing can be done in one of two ways:
 
 - Manual unit testing entails carrying out each test phase by hand. Without the use of an automation tool, manual testing is time-consuming and laborious, especially for repetitive test cases, and it takes more work to create and execute test cases.
 Automated unit testing is the process of employing automated testing technologies to automate routine manual processes. You can record, preserve, and replay your tests using automated testing technologies to avoid manual effort.
-- 
-
-
-
-## Example code for temperature check test cases
-```java
- # is (input, expected result, comment)
-is( FtoC(32),0,'Freezing point is F32, C 0');
-is( FtoC(212),100,'Boiling point is F212, C 100');
-is( FtoC(59038),32767, 'Upper limit of C is 32767'); 
-is( FtoC(59039),undefined, 'One past upper limit is error');
-``` 
-[Why is unit testing is imortent to developers](https://www.techtarget.com/searchsoftwarequality/answer/Is-unit-testing-an-important-aspect-of-software-development)
-
-## Another Example
-```java
-
-
-public class FakeDateTimeProvider : IDateTimeProvider
-{
-    public DateTime ReturnValue { get; set; }
-
-    public DateTime GetDateTime() { return ReturnValue; }
-
-    public FakeDateTimeProvider(DateTime returnValue) { ReturnValue = returnValue; }
-}
-
-```
-### Testing code
-```java
-[TestMethod]
-void ActuateLights_MotionDetected_SavesTimeOfMotion()
-{
-    // Arrange
-    var controller = new SmartHomeController(new FakeDateTimeProvider(new DateTime(2015, 12, 31, 23, 59, 59)));
-
-    // Act
-    controller.ActuateLights(true);
-
-    // Assert
-    Assert.AreEqual(new DateTime(2015, 12, 31, 23, 59, 59), controller.LastMotionTime);
-}
-```
-[Unit testing and coding : best practices](https://www.toptal.com/qa/how-to-write-testable-code-and-why-it-matters#:~:text=A%20typical%20unit%20test%20contains,it%20observes%20the%20resulting%20behavior)
 
 
 ## Why unit testing is important?
 Unit testing is important because it helps ensure that individual components of a software system are working as intended. By running tests on individual units, developers can quickly identify and fix issues, improving the overall quality and reliability of the system. Unit testing also promotes good coding practices by encouraging developers to write modular, testable code. This can make it easier to maintain and extend the codebase over time. Additionally, unit testing can improve collaboration between team members by providing a clear, automated way to validate changes to the code. Overall, unit testing is an essential tool for building robust and high-quality software systems.
 
- https://brightsec.com/blog/unit-testing-best-practices/
+ [Unit testing best practices-brightsec](https://brightsec.com/blog/unit-testing-best-practices/)
 
-Unit testing helps to catch bugs early in the development cycle, reducing the cost and time required to fix them. It also helps to ensure that changes to the code do not break existing functionality, by serving as a safety net as the codebase grows and evolves.
+Unit testing helps to catch bugs early in the development cycle, reducing the cost and time required to fix them. It also helps to ensure that changes to the code do not break existing functionality, by serving as a safety net as the codebase grows and evolves.Unit testing also helps to improve the overall design of the code, encouraging the creation of modular, testable components. This leads to code that is easier to maintain and understand, as well as a development process that is faster and more efficient.
 
-Unit testing also helps to improve the overall design of the code, encouraging the creation of modular, testable components. This leads to code that is easier to maintain and understand, as well as a development process that is faster and more efficient.
-
-https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices
+ [Unit testing best practices-microsoft](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices)
 
  By writing and executing unit tests, developers can ensure that the code they write behaves as expected and is free from bugs and other defects. This helps to improve the overall quality and reliability of the system, reducing the risk of issues arising later in the development cycle. Finally, unit testing provides a clear, automated way to validate changes to the code, improving collaboration between team members and streamlining the development process. Overall, unit testing is a critical component of modern software development and helps to ensure that software systems are reliable, efficient, and maintainable.
 
-https://www.simform.com/blog/unit-testing-best-practices/ 
+ [Unit testing best practices-simform](https://www.simform.com/blog/unit-testing-best-practices/ )
 ## How unit testing is done?
  - Software testing methods like unit testing are essential for assuring the dependability and quality of a program. Early bug detection and correction can save time and money in the long run because it is a cost-effective method.
 - The ability to independently test particular pieces of code rather than having to test the complete application is one of the main advantages of unit testing. 
