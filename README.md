@@ -114,5 +114,5 @@ public class RectangleTest {
     }
 }
 ```
-[Example code for calculation rectangle area](https://dotnettutorials.net/lesson/area-of-rectangle-in-csharp/)
+[Example code for calculating rectangle area](https://dotnettutorials.net/lesson/area-of-rectangle-in-csharp/)
 
