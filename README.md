@@ -58,7 +58,7 @@ Automated unit testing is the process of employing automated testing technologie
 
 
 - Automated browser and user interface testing can be carried out using a variety of unit testing frameworks. You can automate your browser and app testing across 3000+ real browsers, devices, and operating system combinations with a cloud-based testing tool like LambdaTest. It also provides parallel testing, which can drastically reduce the time it takes to run all of your tests.
-- [How to perform Unit Testing](https://www.lambdatest.com/learning-hub/unit-testing#i).
+([How to perform Unit Testing](https://www.lambdatest.com/learning-hub/unit-testing#i)).
 
 
 
