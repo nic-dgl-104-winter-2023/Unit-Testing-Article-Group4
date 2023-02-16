@@ -16,7 +16,8 @@ The procedure for conducting unit tests consists of four steps:
 or not.
 - Execution: Choose an online Selenium grid to conduct test execution.
 
-- Unit tests are executed frequently and quickly, either individually or collectively. Even if they have complex logic or a lot of variables, they should be written in a straightforward, easy-to-read, and understandable manner. Unit testing is conducted before integration testing, so it can save a significant amount of time and money if done accurately. It can be done manually or automatically using different testing tools.
+- Unit tests are executed frequently and quickly, either individually or collectively. Even if they have complex logic or a lot of variables, they should be written in a straightforward, easy-to-read, and understandable manner. Unit testing is conducted before integration testing, so it can save a significant amount of time and money if done accurately. It can be done manually or automatically using different testing tools. ( [Unit testing- lambdatest]( https://www.lambdatest.com/learning-hub/unit-testing))
+
 
 ### Unit testing can be done in one of two ways:
 - Manual unit testing entails carrying out each test phase by hand. Without the use of an automation tool, manual testing is time-consuming and laborious, especially for repetitive test cases, and it takes more work to create and execute test cases.
@@ -29,7 +30,8 @@ or not.
 2. Black-box testing: In this kind of unit testing, the user interface, input, and output of the software application are all validated. To put it another way, black box testing is the process of evaluating an application's functioning in view of client requirements. This testing is known as black-box testing since the source code is hidden throughout it.
 3. Gray-box testing: It is sometimes referred to as semi-transparent testing, is a combination of white-box and black-box testing. In this kind of testing, the testers are only partially familiar with the internal workings, functionality, and design specifications of the application. Gray-box testing encompasses a variety of test types, including regression, matrix, pattern, and orthogonal pattern testing.
 
-- Although writing, running, and debugging unit tests is quick and simple, that doesn't imply you should completely avoid them. According to the majority of DevOps concepts, it's necessary to develop techniques to expedite the creation of unit tests because they can be laborious to set up, especially if they're not automated.
+- Although writing, running, and debugging unit tests is quick and simple, that doesn't imply you should completely avoid them. According to the majority of DevOps concepts, it's necessary to develop techniques to expedite the creation of unit tests because they can be laborious to set up, especially if they're not automated. ( [Unit testing- lambdatest]( https://www.lambdatest.com/learning-hub/unit-testing))
+
 
 ## Why unit testing is important?
 Unit testing is important because it helps ensure that individual components of a software system are working as intended. By running tests on individual units, developers can quickly identify and fix issues, improving the overall quality and reliability of the system. Unit testing also promotes good coding practices by encouraging developers to write modular, testable code. This can make it easier to maintain and extend the codebase over time. Additionally, unit testing can improve collaboration between team members by providing a clear, automated way to validate changes to the code. Overall, unit testing is an essential tool for building robust and high-quality software systems. [Unit testing best practices-brightsec](https://brightsec.com/blog/unit-testing-best-practices/)
