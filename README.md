@@ -45,6 +45,7 @@ Unit testing helps to catch bugs early in the development cycle, reducing the co
 - The ability to independently test particular pieces of code rather than having to test the complete application is one of the main advantages of unit testing. 
 - This improves in spotting issues early on in the development process, before they escalate in complexity and cost to resolve. Unit tests also offer a safety net for upcoming code revisions, making it simpler to make sure that changes to one section of the code do not unintentionally break another.
 - Additionally, unit testing encourages a more flexible and reusable code architecture. Developers are compelled to consider the different parts of their code in isolation and how they interact with one another when they design unit tests. As a result, the codebase is better planned and easier to maintain.
+- 
 
 # Example of unit test code
 
@@ -130,7 +131,26 @@ public class RectangleTest {
     }
 }
 ```
-[Example code for calculating rectangle area](https://dotnettutorials.net/lesson/area-of-rectangle-in-csharp/)
+[Example code for calculating rectangle area](https://dotnettutorials.net/lesson/area-of-rectangle-in-csharp/).
+
+### General test case Example
+
+```java
+package demo.tests;
+import static org.junit.Assert.*;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+public class JUnitProgram {
+    @Test
+    public void test_JUnit() {
+        System.out.println("This is the testcase in this class");
+        String str1="This is the testcase in this class";
+        assertEquals("This is the testcase in this class", str1);
+    }
+}
+```
+[Hou to write general test cases with example](https://www.softwaretestinghelp.com/junit-tests-examples/).
 
 ## Conclusion
 In summary, unit testing is an essential step in the development of software that focuses on ensuring the functionality of individual application components. It encourages excellent coding methods, helps in the early detection of defects, and raises the system's overall quality and dependability. Developers can quickly find problems and solve them while reducing time and expense by separating and testing individual parts. Ultimately, unit testing is a crucial technique for creating reliable, high-quality software systems, and every software development process should include it.
@@ -145,3 +165,4 @@ In summary, unit testing is an essential step in the development of software tha
 - [Example code for calculating rectangle area](https://dotnettutorials.net/lesson/area-of-rectangle-in-csharp/)
 - [Unit testing and coding : best practices](https://www.toptal.com/qa/how-to-write-testable-code-and-why-it-matters#:~:text=A%20typical%20unit%20test%20contains,it%20observes%20the%20resulting%20behavior)
 - [Unit testing- lambdatest]( https://www.lambdatest.com/learning-hub/unit-testing)
+- [Hou to write general test cases with example](https://www.softwaretestinghelp.com/junit-tests-examples/).
