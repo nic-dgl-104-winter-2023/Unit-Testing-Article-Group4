@@ -40,9 +40,6 @@ Unit testing helps to catch bugs early in the development cycle, reducing the co
 - Additionally, unit testing encourages a more flexible and reusable code architecture. Developers are compelled to consider the different parts of their code in isolation and how they interact with one another when they design unit tests. As a result, the codebase is better planned and easier to maintain.
 
 
-# Example of unit test code
-
-
 Unit testing can be done in one of two ways:
 
 
@@ -54,7 +51,7 @@ Automated unit testing is the process of employing automated testing technologie
 - Automated browser and user interface testing can be carried out using a variety of unit testing frameworks. You can automate your browser and app testing across 3000+ real browsers, devices, and operating system combinations with a cloud-based testing tool like LambdaTest. It also provides parallel testing, which can drastically reduce the time it takes to run all of your tests.
 ([How to perform Unit Testing](https://www.lambdatest.com/learning-hub/unit-testing#i)).
 
-
+# Examples of unit test 
 
 ## Example code for temperature check test cases
 ```java
