@@ -1,36 +1,29 @@
 # Unit-Testing-Article-Group4
 ## Introduction
- In software development, testing is an extensive topic of discussion. Before a software product reaches the hands of users, it will likely to have gone through several tests to ensure that the applications behaviour is as expected from the end user's perspective without any defects or bugs.( [Unit testing- datacamp](https://www.datacamp.com/tutorial/pytest-tutorial-a-hands-on-guide-to-unit-testing) )
+Software testing is an important aspect of software development. It involves various types of testing, such as integration, system, and acceptance testing, to ensure that the application functions as intended by the end user. The term used to describe this type of testing method is behavior-driven development (BDD). Lately, there has been a rising trend among developers towards the test-driven development (TDD) methodology, where they write unit tests prior and then modify the code until the tests are successfully passed.
+ ([Unit testing- datacamp]( https://www.datacamp.com/tutorial/pytest-tutorial-a-hands-on-guide-to-unit-testing))
+ 
+ 
+In this article, we are focusing on unit test.
 
- There are two primary approaches used while testing software: Functional Testing and Non-functional Testing. Functional testing focuses on the functionality of a software product. It helps to understand whether the software is performing as needed. Each functionality is tested by providing the input, calculating the output, and comparing the actual result to the anticipated value. While non-functional testing is a sort of software testing used to evaluate the software's non-functional characteristics such as reliability, performance, and accountability. Testing, both functional and non-functional, is necessary for newly produced software. While non-functional testing examines an application's capacity to operate in an external environment, functional testing examines the accuracy of internal functions. ( [Unit testing- Javatpoint](https://www.javatpoint.com/types-of-software-testing) )
-
- In this article, we are concentrating on unit testing, a type of functional testing.
  
  ## What is Unit testing? 
-Unit testing is a form of software testing that focuses on validating individual units or components of a software application and confirming that each unit functions as intended. It is considered the first phase of functional testing in the software development life cycle. It ensures that it has no impact on any other parts of your code than the component or unit under test by isolating them from the rest of your code. As a result, it isolates a single functional component, guarantees correctness, and confirms that there are no errors, enabling speedy bug fixes before merging them into the main code. It is a type of "white box" testing. It is frequently accomplished by writing test cases that test specific functions, methods, and classes. Test cases can be written in plain English, even though they are usually written in pseudocode (implemented in a language like Java or JavaScript).
 
-The procedure for conducting unit tests consists of four steps:
-- Creating test cases: Write several test cases for each component of a web application.
-- Review and rewrite: Examine the written test cases and, if necessary, rewrite them if there are any mistakes.
-- Baseline: Verify that each line of code is structured in a certain way.
-or not.
-- Execution: Choose an online Selenium grid to conduct test execution.
+Unit testing is a testing method designed to evaluate individual units or components of a software system separately to ensure that any errors or issues are confined to the specific unit being tested and do not impact the rest of the code. This approach enables developers to identify and fix bugs quickly, thereby reducing the risk of introducing problems into a larger codebase when integrating changes. ( [Unit testing- lambdatest]( https://www.lambdatest.com/learning-hub/unit-testing))
 
-- Unit tests are executed frequently and quickly, either individually or collectively. Even if they have complex logic or a lot of variables, they should be written in a straightforward, easy-to-read, and understandable manner. Unit testing is conducted before integration testing, so it can save a significant amount of time and money if done accurately. It can be done manually or automatically using different testing tools. ( [Unit testing- lambdatest]( https://www.lambdatest.com/learning-hub/unit-testing))
+Unit testing is a form of white-box testing that involves developers writing test cases to evaluate the performance of individual functions, methods, and classes. The tests are created in either pseudocode, which is then implemented in a programming language like Java or JavaScript, or in plain English, depending on the programming language used in the development process. ( [Unit testing- lambdatest]( https://www.lambdatest.com/learning-hub/unit-testing))
 
+Unit testing is also considered as automated test since the test plan is carried out by scripts instead of being performed manually by a human being.
+([Unit testing- datacamp]( https://www.datacamp.com/tutorial/pytest-tutorial-a-hands-on-guide-to-unit-testing))
 
-### Unit testing can be done in one of two ways:
-- Manual unit testing entails carrying out each test phase by hand. Without the use of an automation tool, manual testing is time-consuming and laborious, especially for repetitive test cases, and it takes more work to create and execute test cases.
-- Automated unit testing is the process of employing automated testing technologies to automate routine manual processes. You can record, preserve, and replay your tests using automated testing technologies to avoid manual effort.
+The following stages are involved in running unit tests:
 
-### Unit testing can be further classified into three different types of testing:
+1. Creating test cases: This involves creating a set of test cases that cover different scenarios and using those test cases for each component of an application that needs to be tested.
 
-1. Whitebox testing- It is also known as glass box testing, structural testing, clear box testing, open box testing and transparent box testing. When performing this testing, the tester is familiar of the applications internal functionality and can test it against the design and requirements. It examines a software's internal code and infrastructure with a focus on comparing inputs that have been predefined to the desired and expected results. However, it is unknown what the internal structure of a component or function of an application is.
-
-2. Black-box testing: In this kind of unit testing, the user interface, input, and output of the software application are all validated. To put it another way, black box testing is the process of evaluating an application's functioning in view of client requirements. This testing is known as black-box testing since the source code is hidden throughout it.
-3. Gray-box testing: It is sometimes referred to as semi-transparent testing, is a combination of white-box and black-box testing. In this kind of testing, the testers are only partially familiar with the internal workings, functionality, and design specifications of the application. Gray-box testing encompasses a variety of test types, including regression, matrix, pattern, and orthogonal pattern testing.
-
-- Although writing, running, and debugging unit tests is quick and simple, that doesn't imply you should completely avoid them. According to the majority of DevOps concepts, it's necessary to develop techniques to expedite the creation of unit tests because they can be laborious to set up, especially if they're not automated. ( [Unit testing- lambdatest]( https://www.lambdatest.com/learning-hub/unit-testing))
+2. Review and re-write: After writing the test cases, it is necessary to examine them and make any necessary revisions or corrections if there are any errors.
+3. Baseline: Checking each line of code is written correctly.
+4. Execution: Conduct the test execution. The process includes validating the functionality of each feature in a software application by testing it under various scenarios to ensure that it performs as expected.
+( [Unit testing- lambdatest]( https://www.lambdatest.com/learning-hub/unit-testing))
 
 
 ## Why unit testing is important?
@@ -45,7 +38,7 @@ Unit testing helps to catch bugs early in the development cycle, reducing the co
 - The ability to independently test particular pieces of code rather than having to test the complete application is one of the main advantages of unit testing. 
 - This improves in spotting issues early on in the development process, before they escalate in complexity and cost to resolve. Unit tests also offer a safety net for upcoming code revisions, making it simpler to make sure that changes to one section of the code do not unintentionally break another.
 - Additionally, unit testing encourages a more flexible and reusable code architecture. Developers are compelled to consider the different parts of their code in isolation and how they interact with one another when they design unit tests. As a result, the codebase is better planned and easier to maintain.
-- 
+
 
 # Example of unit test code
 
@@ -159,7 +152,7 @@ In summary, unit testing is an essential step in the development of software tha
 
 ## References
 - [Unit testing- datacamp](https://www.datacamp.com/tutorial/pytest-tutorial-a-hands-on-guide-tit-testino-ung)
-- [Unit testing- Javatpoint](https://www.javatpoint.com/types-of-software-testing)
+
 - [Unit testing best practices-brightsec](https://brightsec.com/blog/unit-testing-best-practices/)
 - [Unit testing best practices-microsoft](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices)
 - [Unit testing best practices-simform](https://www.simform.com/blog/unit-testing-best-practices/)
