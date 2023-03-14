@@ -141,7 +141,7 @@ public class JUnitProgram {
     }
 }
 ```
-[Hou to write general test cases with example](https://www.softwaretestinghelp.com/junit-tests-examples/).
+[How to write general test cases with example](https://www.softwaretestinghelp.com/junit-tests-examples/).
 
 ## Conclusion
 In summary, unit testing is an essential step in the development of software that focuses on ensuring the functionality of individual application components. It encourages excellent coding methods, helps in the early detection of defects, and raises the system's overall quality and dependability. Developers can quickly find problems and solve them while reducing time and expense by separating and testing individual parts. Ultimately, unit testing is a crucial technique for creating reliable, high-quality software systems, and every software development process should include it.
