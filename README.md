@@ -122,8 +122,7 @@ public class RectangleTest {
 }
 ```
 
-The code includes a Rectangle class with a CalculateArea method that calculates the area of a rectangle using length and width parameters, but returns -1 if either parameter is less than or equal to zero. The RectangleTest class has a TestCalculateArea method that creates an instance of the Rectangle class and tests the CalculateArea method with various inputs, checking for expected output using the Assert.AreEqual method. The tests include a valid input, an input with length 0, and an input with negative width, to verify that invalid inputs are handled properly.
-[Example code for calculating rectangle area](https://dotnettutorials.net/lesson/area-of-rectangle-in-csharp/).
+The code includes a Rectangle class with a CalculateArea method that calculates the area of a rectangle using length and width parameters, but returns -1 if either parameter is less than or equal to zero. The RectangleTest class has a TestCalculateArea method that creates an instance of the Rectangle class and tests the CalculateArea method with various inputs, checking for expected output using the Assert.AreEqual method. The tests include a valid input, an input with length 0, and an input with negative width, to verify that invalid inputs are handled properly.([Example code for calculating rectangle area](https://dotnettutorials.net/lesson/area-of-rectangle-in-csharp/))
 
 ### General test case Example
 
