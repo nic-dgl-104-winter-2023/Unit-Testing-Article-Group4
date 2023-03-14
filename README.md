@@ -35,21 +35,32 @@ Unit testing helps to catch bugs early in the development cycle, reducing the co
  
 ## How unit testing is done?
  - Software testing methods like unit testing are essential for assuring the dependability and quality of a program. Early bug detection and correction can save time and money in the long run because it is a cost-effective method.
-- The ability to independently test particular pieces of code rather than having to test the complete application is one of the main advantages of unit testing. 
+- The ability to independently test particular pieces of code rather than having to test the complete application is one of the main advantages of unit testing ([How to perform Unit Testing](https://www.lambdatest.com/learning-hub/unit-testing#i)).
+
+- The process starts with the chunk of code that was created by the developer for an Application or software then testing come into file where the written code has to test for required results as the client constrains in 2 to 3 ways for different uses in the system and then if there is any mall function in the codee the developer will update it and then this entire process is a loop that every tester has to repeat it as many times as untill the exact piece of code performs as requirements
+([How to execute Unit testing](https://www.guru99.com/unit-testing-guide.html)).
+
 - This improves in spotting issues early on in the development process, before they escalate in complexity and cost to resolve. Unit tests also offer a safety net for upcoming code revisions, making it simpler to make sure that changes to one section of the code do not unintentionally break another.
-- Additionally, unit testing encourages a more flexible and reusable code architecture. Developers are compelled to consider the different parts of their code in isolation and how they interact with one another when they design unit tests. As a result, the codebase is better planned and easier to maintain.
+- Additionally, unit testing encourages a more flexible and reusable code architecture. Developers are compelled to consider the different parts of their code in isolation and how they interact with one another when they design unit tests. As a result, the codebase is better planned and easier to maintain([How to perform Unit Testing](https://www.lambdatest.com/learning-hub/unit-testing#i)).
 
 
 Unit testing can be done in one of two ways:
+1. Manual testing.
+2. Automated testing
 
 
 - Manual unit testing entails carrying out each test phase by hand. Without the use of an automation tool, manual testing is time-consuming and laborious, especially for repetitive test cases, and it takes more work to create and execute test cases.
 Automated unit testing is the process of employing automated testing technologies to automate routine manual processes. You can record, preserve, and replay your tests using automated testing technologies to avoid manual effort.
-- However, many usability problems may go unnoticed during a website's testing. For instance, certain features of your website function properly on Chrome 99 (Windows 11), but not in Firefox 97. (Windows 11). Cross-browser testing is therefore crucial to resolving such usability issues before your customers do.
+- However, many usability problems may go unnoticed during a website's testing. For instance, certain features of your website function properly on Chrome 99 (Windows 11), but not in Firefox 97. (Windows 11). Cross-browser testing is therefore crucial to resolving such usability issues before your customers do[Unit Testing Tutorial – What is, Types & Test Example](https://www.guru99.com/unit-testing-guide.html).
 
 
 - Automated browser and user interface testing can be carried out using a variety of unit testing frameworks. You can automate your browser and app testing across 3000+ real browsers, devices, and operating system combinations with a cloud-based testing tool like LambdaTest. It also provides parallel testing, which can drastically reduce the time it takes to run all of your tests.
-([How to perform Unit Testing](https://www.lambdatest.com/learning-hub/unit-testing#i)).
+
+- The workflow of Unit Testing is 
+1) Create Test Cases 
+2) Review/Rework 
+3) Baseline 
+4) Execute Test Cases. ([How to execute Unit testing](https://www.guru99.com/unit-testing-guide.html)).
 
 # Examples of unit test 
 
